@@ -284,7 +284,6 @@ button {
   align-content: start;
   gap: 8px;
   color: var(--accent);
-  font-size: 0.76rem;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -294,9 +293,7 @@ button {
 .artifact {
   margin: 0 0 7px;
   color: var(--soft);
-  font-size: 0.72rem;
   font-weight: 900;
-  line-height: 1.35;
   text-transform: uppercase;
 }
 
@@ -396,7 +393,6 @@ p {
   max-width: 76ch;
   margin-bottom: 0;
   color: var(--ink);
-  line-height: 1.48;
 }
 
 #scene-points {
@@ -407,7 +403,29 @@ p {
   padding-left: 18px;
   overflow: auto;
   color: var(--muted);
-  line-height: 1.45;
+}
+
+.hud .scene-kicker,
+.hud .capability,
+.hud .scene-place,
+.hud .artifact,
+.hud #scene-story,
+.hud #scene-points {
+  font-family: "VT323", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.4;
+}
+
+.hud .capability,
+.hud .scene-place,
+.hud .artifact {
+  line-height: 1.35;
+}
+
+.hud #scene-points li {
+  padding-left: 2px;
 }
 
 @media (max-width: 900px) {
@@ -501,6 +519,15 @@ p {
 
   #scene-title {
     font-size: 1.28rem;
+  }
+
+  .hud .scene-kicker,
+  .hud .capability,
+  .hud .scene-place,
+  .hud .artifact,
+  .hud #scene-story,
+  .hud #scene-points {
+    font-size: 20px;
   }
 }
 
