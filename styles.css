@@ -408,9 +408,7 @@ p {
 .hud .scene-kicker,
 .hud .capability,
 .hud .scene-place,
-.hud .artifact,
-.hud #scene-story,
-.hud #scene-points {
+.hud .artifact {
   font-family: "VT323", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
   font-size: 22px;
   font-weight: 400;
@@ -418,10 +416,32 @@ p {
   line-height: 1.4;
 }
 
+.hud #scene-story {
+  font-family: "VT323", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 21px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.4;
+}
+
+.hud .scene-place,
+.hud .artifact,
+.hud #scene-points {
+  font-family: "VT323", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.38;
+}
+
 .hud .capability,
 .hud .scene-place,
 .hud .artifact {
   line-height: 1.35;
+}
+
+.hud .artifact-prefix {
+  font-weight: 700;
 }
 
 .hud #scene-points li {
@@ -522,12 +542,18 @@ p {
   }
 
   .hud .scene-kicker,
-  .hud .capability,
+  .hud .capability {
+    font-size: 20px;
+  }
+
+  .hud #scene-story {
+    font-size: 19px;
+  }
+
   .hud .scene-place,
   .hud .artifact,
-  .hud #scene-story,
   .hud #scene-points {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 

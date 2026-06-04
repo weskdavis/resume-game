@@ -3363,7 +3363,13 @@ function renderPanel() {
   ui.story.style.display = outro ? "none" : "";
   ui.place.textContent = scene.place;
   ui.place.style.display = intro || outro ? "none" : "";
-  ui.artifact.textContent = `Capability gained: ${scene.artifact}`;
+  ui.artifact.replaceChildren();
+  if (!intro && !outro) {
+    const prefix = document.createElement("span");
+    prefix.className = "artifact-prefix";
+    prefix.textContent = "Capability gained: ";
+    ui.artifact.append(prefix, document.createTextNode(scene.artifact));
+  }
   ui.artifact.style.display = intro || outro ? "none" : "";
   ui.points.innerHTML = "";
   scene.proof.forEach((point) => {
