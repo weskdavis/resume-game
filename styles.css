@@ -397,11 +397,11 @@ p {
 
 #scene-points {
   display: grid;
-  gap: 7px;
-  max-height: 150px;
-  margin: 10px 0 0;
-  padding-left: 18px;
-  overflow: auto;
+  gap: 4px;
+  max-height: none;
+  margin: 6px 0 0;
+  padding-left: 16px;
+  overflow: visible;
   color: var(--muted);
 }
 
@@ -428,16 +428,16 @@ p {
 .hud .artifact,
 .hud #scene-points {
   font-family: "VT323", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 1.38;
+  line-height: 1.28;
 }
 
 .hud .capability,
 .hud .scene-place,
 .hud .artifact {
-  line-height: 1.35;
+  line-height: 1.25;
 }
 
 .hud .artifact-prefix {
@@ -553,7 +553,7 @@ p {
   .hud .scene-place,
   .hud .artifact,
   .hud #scene-points {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 
