@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A playable resume journey for Weston Davis, a full-stack GTM builder for developer platforms, open source, partnerships, AI workflows, and enterprise software.">
+    <meta property="og:title" content="Weston Davis | Full-Stack GTM Builder">
+    <meta property="og:description" content="Walk a pixel-art beaver through a career journey across developer platforms, open source, partnerships, sales strategy, enterprise consulting, and AI-native GTM.">
+    <meta property="og:type" content="website">
+    <title>Weston Davis | Full-Stack GTM Builder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=20260604-responsive-final">
+  </head>
+  <body>
+    <main class="app">
+      <header class="topbar">
+        <a class="brand" href="#game-canvas" aria-label="Weston Davis resume game home">
+          <span>Weston Davis</span>
+          <small>Full-stack GTM builder</small>
+        </a>
+
+        <nav class="utility" aria-label="Contact and resume links">
+          <a class="text-button" href="https://www.linkedin.com/in/westonkdavis" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="text-button is-primary" href="resume.html">Resume</a>
+        </nav>
+      </header>
+
+      <section class="stage" aria-label="Busy Beaver Resume Quest">
+        <canvas id="game-canvas" width="960" height="540" tabindex="0" role="img" aria-label="Playable side-scrolling resume game. Move Weston the beaver through career scenes from Pinehurst to the next technical GTM quest."></canvas>
+
+        <div class="scene-nav" aria-label="Scene navigation">
+          <button class="icon-button" id="prev-scene" type="button" aria-label="Previous scene">←</button>
+          <div class="timeline" id="timeline" aria-label="Career timeline"></div>
+          <button class="icon-button" id="next-scene" type="button" aria-label="Next scene">→</button>
+        </div>
+
+        <div class="touch-controls" aria-label="Touch controls">
+          <button class="touch-button" data-control="left" type="button" aria-label="Move left">←</button>
+          <button class="touch-button" data-control="right" type="button" aria-label="Move right">→</button>
+          <button class="touch-button" data-control="jump" type="button" aria-label="Jump">↑</button>
+          <button class="touch-button" data-control="slap" type="button" aria-label="Tail slap">↓</button>
+        </div>
+      </section>
+
+      <section class="hud" aria-live="polite">
+        <button class="hud-toggle" id="hud-toggle" type="button" aria-expanded="true">Career card</button>
+
+        <div class="hud-grid" id="hud-content">
+          <div class="scene-kicker">
+            <span id="scene-count">Level 01 / 10</span>
+            <span id="scene-type">Origin</span>
+          </div>
+
+          <div class="scene-main">
+            <p class="capability" id="scene-capability">Builder Mindset</p>
+            <h1 id="scene-title">Southern Pines / Pinehurst</h1>
+            <p id="scene-story">The journey starts in longleaf pine country: practical, curious, self-directed, and oriented toward useful work.</p>
+          </div>
+
+          <div class="scene-proof">
+            <div class="scene-place" id="scene-place">Southern Pines / Pinehurst, NC</div>
+            <div class="artifact" id="scene-artifact">Capability gained: Toolbox</div>
+            <ul id="scene-points"></ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="final-overlay" id="final-overlay" aria-hidden="true">
+        <div class="final-card" role="dialog" aria-modal="true" aria-labelledby="final-title">
+          <p class="final-kicker">Mission Complete</p>
+          <h2 id="final-title">Weston Davis</h2>
+          <p class="final-subtitle">GTM Builder &bull; Partnerships &bull; Developer Platforms &bull; Strategy &amp; Operations</p>
+
+          <div class="final-actions" aria-label="Final resume actions">
+            <button class="text-button final-button" id="final-email-button" type="button">Email</button>
+            <a class="text-button final-button" href="https://www.linkedin.com/in/westonkdavis" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="text-button final-button" href="resume.html">Traditional Resume</a>
+            <button class="text-button final-button" id="final-print-button" type="button">Print / Save PDF</button>
+          </div>
+
+          <p class="final-status" id="final-status" aria-live="polite"></p>
+        </div>
+      </div>
+    </main>
+
+    <script src="resume-data.js?v=20260604-closing-modal-sooner"></script>
+    <script src="script.js?v=20260604-mobile-intro-center"></script>
+  </body>
+</html>

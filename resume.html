@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Classic resume for Weston Davis, GTM builder for developer platforms, partnerships, sales strategy, and operations.">
+    <title>Weston Davis | Resume</title>
+    <style>
+      :root {
+        --text: #1f2933;
+        --muted: #52616b;
+        --line: #d9e2ec;
+        --accent: #102a43;
+        --paper: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #f5f7fa;
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 10.5pt;
+        line-height: 1.42;
+      }
+
+      .toolbar {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        padding: 16px;
+      }
+
+      .toolbar a,
+      .toolbar button {
+        display: inline-flex;
+        align-items: center;
+        min-height: 36px;
+        padding: 0 12px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: #fff;
+        color: var(--accent);
+        font: 700 0.82rem -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .page {
+        max-width: 8.5in;
+        margin: 0 auto 28px;
+        padding: 0.55in 0.62in;
+        background: var(--paper);
+        box-shadow: 0 6px 22px rgba(16, 42, 67, 0.08);
+      }
+
+      header {
+        margin-bottom: 16px;
+        padding-bottom: 12px;
+        border-bottom: 1.5px solid var(--accent);
+      }
+
+      h1 {
+        margin: 0 0 4px;
+        color: var(--accent);
+        font-size: 24pt;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        line-height: 1;
+        text-transform: uppercase;
+      }
+
+      .contact,
+      .small,
+      .context,
+      .dates {
+        color: var(--muted);
+      }
+
+      .headline {
+        margin-top: 10px;
+        color: var(--accent);
+        font-size: 12pt;
+        font-weight: 700;
+      }
+
+      .summary {
+        margin-top: 7px;
+      }
+
+      section {
+        margin-top: 16px;
+      }
+
+      h2 {
+        margin: 0 0 7px;
+        padding-bottom: 3px;
+        border-bottom: 1px solid var(--line);
+        color: var(--accent);
+        font-size: 10.5pt;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .skills {
+        margin: 0;
+        font-size: 9.7pt;
+      }
+
+      .role {
+        margin-top: 12px;
+      }
+
+      .role:first-of-type {
+        margin-top: 0;
+      }
+
+      .role-header {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 1px;
+      }
+
+      .company,
+      .degree,
+      .publication-title {
+        color: var(--accent);
+        font-weight: 700;
+      }
+
+      .company {
+        font-size: 11pt;
+      }
+
+      .dates {
+        white-space: nowrap;
+        font-size: 9.3pt;
+      }
+
+      .title {
+        margin-bottom: 4px;
+        font-weight: 700;
+      }
+
+      .context {
+        margin: 3px 0 5px;
+        font-style: italic;
+      }
+
+      ul {
+        margin: 4px 0 0 17px;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 3.5px;
+        padding-left: 1px;
+      }
+
+      .education-item,
+      .publication-item {
+        margin-bottom: 8px;
+      }
+
+      @media print {
+        @page {
+          size: Letter;
+          margin: 0.45in 0.55in;
+        }
+
+        body {
+          background: #fff;
+          font-size: 10pt;
+          line-height: 1.36;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+
+        .toolbar {
+          display: none;
+        }
+
+        .page {
+          max-width: none;
+          margin: 0;
+          padding: 0;
+          box-shadow: none;
+        }
+
+        section,
+        .role,
+        ul {
+          break-inside: auto;
+          page-break-inside: auto;
+        }
+
+        h2,
+        .role-header,
+        .title,
+        .context {
+          break-after: avoid;
+          page-break-after: avoid;
+        }
+
+        a {
+          color: inherit;
+          text-decoration: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="toolbar" aria-label="Resume actions">
+      <a href="index.html">Game</a>
+      <button type="button" onclick="window.print()">Print</button>
+      <a href="https://www.linkedin.com/in/westonkdavis/" target="_blank" rel="noreferrer">LinkedIn</a>
+    </nav>
+
+    <main class="page">
+      <header>
+        <h1>Weston Davis</h1>
+        <div class="contact">Pinehurst, NC | westonkdavis@gmail.com | <a href="https://www.linkedin.com/in/westonkdavis/">linkedin.com/in/westonkdavis</a></div>
+        <div class="headline">Full-Stack GTM Builder | Developer Platforms | Partnerships, Sales Strategy & Operations</div>
+        <p class="summary">
+          Builder and cross-functional GTM operator with 10+ years of experience turning technical products, services businesses, and partner ecosystems into repeatable growth motions across open source, developer tools, cloud, DevOps, AI-enabled software, and consulting. Background spans 0-to-1 startup GTM, GitHub and Microsoft ecosystem partnerships, IBM Consulting / BoxBoat integration and global GSI growth, sales strategy and operations at Elastic, services operations at Docker, channel programs at Liferay, and legal / partner governance at Red Hat. The breadth is the depth: commercial judgment, operator discipline, and technical fluency applied across the full GTM stack.
+        </p>
+      </header>
+
+      <section>
+        <h2>Core Strengths</h2>
+        <p class="skills">GTM Strategy & Execution | 0-to-1 Buildout | Developer Platforms | Open Source & DevOps | Partnerships & Ecosystems | GitHub & Microsoft Ecosystem | GSI & Channel Programs | Services & Consulting GTM | Sales Strategy & Operations | Revenue Operations | Account Mapping & Pipeline Development | Field Enablement | Offering & Sales Play Design | Co-Sell & Marketplace Motions | Executive Reporting & Forecasting | Cross-Functional Leadership | Program Management | Commercial Contracts & Partner Governance | AI-Enabled Software Workflows</p>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+
+        <div class="role">
+          <div class="role-header">
+            <div class="company">CodeCargo, Pinehurst, NC</div>
+            <div class="dates">2025 - 2026</div>
+          </div>
+          <div class="title">Director of GTM (Sales & Partners)</div>
+          <p class="context">First business hire for an AI-driven Internal Developer Portal platform focused on GitHub, developer experience, workflow governance, and AI-enabled software delivery.</p>
+          <ul>
+            <li>Built GTM from zero to initial customer transactions, defining ICP, messaging, partner strategy, sales motion, and repeatable plays for developer, platform engineering, and DevOps buyers.</li>
+            <li>Secured and operationalized GitHub and Microsoft ecosystem partnerships, aligning product direction, co-sell messaging, field enablement, partner-sourced opportunities, and marketplace-ready positioning.</li>
+            <li>Designed partner-led campaigns and account plays around GitHub Actions modernization, workflow governance, internal developer portals, and AI-enabled platform engineering.</li>
+            <li>Represented the company at GitHub Universe and other ecosystem events, managing partner alignment, in-event conversations, and follow-up to convert interest into pipeline.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="role-header">
+            <div class="company">IBM Consulting / BoxBoat, Pinehurst, NC</div>
+            <div class="dates">2022 - 2025</div>
+          </div>
+          <div class="title">Associate Partner / Director of Sales, Solution Architecture & Partnerships</div>
+          <p class="context">Led BoxBoat's open source technology consulting business after acquisition into IBM Consulting.</p>
+          <ul>
+            <li>Led sales, solution architecture, marketing, and BDR functions responsible for scaling BoxBoat's open source consulting business within IBM Consulting's GTM model.</li>
+            <li>Owned strategic open source and developer platform alliance relationships, driving joint GTM strategy, partner-sourced pipeline, field enablement, and revenue opportunities.</li>
+            <li>Packaged and rolled out repeatable services offerings across clients, partners, and IBM Consulting globally, turning technical capability into field-ready sales plays.</li>
+            <li>Exceeded all quarterly integration business case metrics for 12 consecutive quarters across signings, revenue, and gross profit.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="role-header">
+            <div class="company">Elastic, Pinehurst, NC</div>
+            <div class="dates">2019 - 2022</div>
+          </div>
+          <div class="title">Senior Sales Strategy Manager, Americas | Manager, Strategy & Operations Business Partner, Customer Success</div>
+          <ul>
+            <li>Served as strategy and operations business partner to the Vice President of the Americas, driving GTM planning, business cadence, pipeline inspection, and executive reporting.</li>
+            <li>Led annual planning workstreams including segmentation, territory design, account prioritization, headcount allocation, and quota / target allocation.</li>
+            <li>Owned run-the-business processes including forecasting, QBRs, ELT and Board reporting, partnering with data teams to create visibility into performance and execution risk.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="role-header">
+            <div class="company">Docker, Raleigh, NC</div>
+            <div class="dates">2017 - 2019</div>
+          </div>
+          <div class="title">Manager, Customer Success & Services Operations</div>
+          <ul>
+            <li>Built and scaled Professional Services by leading pre-sales, scoping, closing, delivery coordination, reporting, offering development, and engagement management worldwide.</li>
+            <li>Led planning and operations under the EVP of Customer Success across Professional Services, Customer Enablement, and Global Support.</li>
+            <li>Led global GTM planning for new services offerings across marketing, sales operations, finance, legal, and field teams.</li>
+            <li>Developed revenue recognition policies and supported annual resource, budget, and headcount planning.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="role-header">
+            <div class="company">Liferay, Raleigh, NC</div>
+            <div class="dates">2014 - 2017</div>
+          </div>
+          <div class="title">Product and Programs Lead</div>
+          <ul>
+            <li>Developed strategic channel programs for open source products targeting system integrators, managed service providers, VARs, and resellers.</li>
+            <li>Organized rollout and ongoing support of channel programs across leadership, operations, marketing, branding, sales operations, alliances, and field sales.</li>
+            <li>Negotiated OEM agreements worldwide and supported commercial models for subscription services and new products.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="role-header">
+            <div class="company">Red Hat, Raleigh, NC</div>
+            <div class="dates">2012 - 2014</div>
+          </div>
+          <div class="title">Contracts Specialist, Business Affairs</div>
+          <ul>
+            <li>Analyzed, negotiated, drafted, and closed licensing, sales, strategic alliance, embedded system, cloud service provider, procurement, sponsorship, and development agreements exceeding $120M.</li>
+            <li>Advised sales, consultants, business unit leadership, and management on legal issues, complex deal structures, company policies, IP, and negotiation strategy.</li>
+            <li>Worked across legal, channel sales, and IT to finalize Red Hat's global corporate partner anti-corruption vetting program.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <div class="education-item">
+          <div class="degree">Campbell University, Norman Adrian Wiggins School of Law</div>
+          <div>Juris Doctor, 2012</div>
+          <div class="small">Campbell Law Review Board of Editors, Technology Editor; Book Award, International Trade Law; ABA Law Student Division Special Committee on Copyrights & New Technologies; Intellectual Property Law Society, President; Honor Court Justice</div>
+        </div>
+        <div class="education-item">
+          <div class="degree">Tulane University, A.B. Freeman School of Business</div>
+          <div>Bachelor of Science in Management, History Minor, 2009</div>
+          <div class="small">Distinguished Honors Scholarship Recipient; Business & Law Society, Vice President; Freeman IDEAcorps Consulting at The Idea Village, Project Manager</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Publications</h2>
+        <div class="publication-item">
+          <div class="publication-title">FOSSmarks.org</div>
+          <div>Co-Author, Developer, Webmaster - <em>FOSSmarks, A Practical Guide to Understanding Trademarks in the Context of Free and Open Source Software Projects</em> (2016)</div>
+        </div>
+        <div class="publication-item">
+          <div class="publication-title">Opensource.com</div>
+          <div>Author - "Up close and personal with Twitter's Open Source Manager Chris Aniszczyk" (2013)</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Community & Interests</h2>
+        <p class="skills">ACS Sandhills Soccer Coach, U9 Girls; Moore County Parks and Recreation Softball Coach, 7-8 Girls; Free Software Foundation Europe Legal Network; Kramden Institute Computer Award Day Volunteer; mountain and gravel biking; fly fishing; skiing; family; cooking; music; art</p>
+      </section>
+    </main>
+  </body>
+</html>
