@@ -3433,6 +3433,11 @@ document.querySelectorAll(".touch-button").forEach((button) => {
   const control = button.dataset.control;
   const start = (event) => {
     event.preventDefault();
+    if (event.pointerId !== undefined && button.setPointerCapture) {
+      try {
+        button.setPointerCapture(event.pointerId);
+      } catch {}
+    }
     if (control === "left") keys.add("ArrowLeft");
     if (control === "right") keys.add("ArrowRight");
     if (control === "jump") jump();
@@ -3446,6 +3451,12 @@ document.querySelectorAll(".touch-button").forEach((button) => {
   button.addEventListener("pointerup", end);
   button.addEventListener("pointercancel", end);
   button.addEventListener("pointerleave", end);
+});
+
+document.querySelectorAll(".scene-nav, .touch-controls, .timeline, .icon-button, .touch-button, .dot, #game-canvas").forEach((control) => {
+  ["contextmenu", "selectstart", "dragstart"].forEach((eventName) => {
+    control.addEventListener(eventName, (event) => event.preventDefault());
+  });
 });
 
 ui.prev.addEventListener("click", () => goToScene(activeScene - 1));

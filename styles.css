@@ -43,6 +43,28 @@ button {
   font: inherit;
 }
 
+.stage,
+.scene-nav,
+.timeline,
+.touch-controls,
+.icon-button,
+.touch-button,
+.dot,
+#game-canvas {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.scene-nav,
+.touch-controls,
+.icon-button,
+.touch-button,
+.dot,
+#game-canvas {
+  touch-action: manipulation;
+}
+
 .app {
   display: grid;
   grid-template-rows: auto minmax(0, 1fr) auto;
