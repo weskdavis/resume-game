@@ -139,6 +139,11 @@ function sceneCameraTarget(index) {
   const maxCamera = Math.max(0, world.width - viewWidth);
   if (isIntroScene(index)) return 0;
   if (isOutroScene(index)) return sceneCameraTarget(Math.max(0, index - 1));
+  if (scenes[index]?.visual === "codecargo" && viewWidth < 820) {
+    const sceneLeft = index * world.sceneWidth;
+    const contentCenter = sceneLeft + 448;
+    return Math.max(0, Math.min(maxCamera, contentCenter - viewWidth / 2));
+  }
   const sceneCenter = index * world.sceneWidth + world.sceneWidth / 2;
   return Math.max(0, Math.min(maxCamera, sceneCenter - viewWidth / 2));
 }
@@ -2558,9 +2563,9 @@ function drawCargoFlow(x, y) {
 }
 
 function drawCodeCargo(left) {
-  drawTerminal(left + 76, world.ground - 174, "CodeCargo", "> build gtm --from-zero");
-  drawAiRobotBackend(left + 398, world.ground - 220);
-  text("GitHub Universe", toScreenX(left + 114), toScreenY(world.ground - 198), 18 * currentScale(), "#10151b");
+  drawTerminal(left + 40, world.ground - 174, "CodeCargo", "> build gtm --from-zero");
+  drawAiRobotBackend(left + 326, world.ground - 220);
+  text("GitHub Universe", toScreenX(left + 80), toScreenY(world.ground - 198), 18 * currentScale(), "#10151b");
 }
 
 function drawPipeline(x, y) {
