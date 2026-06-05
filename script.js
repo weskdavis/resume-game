@@ -2777,7 +2777,7 @@ function drawNext(left) {
   drawMountainBackdrop(left);
   drawBrook(left + 68, world.ground + 8);
   drawWaterfall(left + 716, world.ground - 150);
-  drawSignpost(left + 512, world.ground - 260);
+  drawSignpost(left + 392, world.ground - 260);
 }
 
 function drawUnknown(left) {
