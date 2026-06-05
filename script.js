@@ -2563,9 +2563,16 @@ function drawCargoFlow(x, y) {
 }
 
 function drawCodeCargo(left) {
-  drawTerminal(left + 40, world.ground - 174, "CodeCargo", "> build gtm --from-zero");
-  drawAiRobotBackend(left + 326, world.ground - 220);
-  text("GitHub Universe", toScreenX(left + 80), toScreenY(world.ground - 198), 18 * currentScale(), "#10151b");
+  drawCodeCargoConsole(left + 188, world.ground - 300);
+  drawAiRobotBackend(left + 282, world.ground - 220);
+  text("GitHub Universe", toScreenX(left + 210), toScreenY(world.ground - 318), 16 * currentScale(), "#10151b");
+}
+
+function drawCodeCargoConsole(x, y) {
+  rectWorld(x, y, 302, 104, "#10151b");
+  rectWorld(x, y, 302, 24, "#232a34");
+  text("CodeCargo", toScreenX(x + 20), toScreenY(y + 52), 20 * currentScale(), "#d8f77a");
+  text("> build gtm --from-zero", toScreenX(x + 20), toScreenY(y + 78), 14 * currentScale(), "#8bdc65");
 }
 
 function drawPipeline(x, y) {
@@ -2594,13 +2601,13 @@ function drawAiRobotBackend(x, y) {
   const grayDark = "#454545";
   const black = "#050607";
 
-  drawRepoCloud(x + 292, y - 58, "AWS", "#f8a21a", 0.82);
-  drawRepoCloud(x + 426, y - 20, "Microsoft", "#4f7bd9", 0.78);
+  drawRepoCloud(x + 220, y - 68, "AWS", "#f8a21a", 0.82);
+  drawRepoCloud(x + 340, y - 42, "Microsoft", "#4f7bd9", 0.78);
   drawGitHubContainer(x + 318, y + 142);
 
   drawPixelCable(x + 318, y + 162, x + 242, y + 124, "#5aa2ff");
-  drawPixelCable(x + 236, y + 62, x + 326, y - 20, "#f8a21a");
-  drawPixelCable(x + 232, y + 92, x + 466, y + 20, "#4f7bd9");
+  drawPixelCable(x + 236, y + 62, x + 254, y - 30, "#f8a21a");
+  drawPixelCable(x + 232, y + 92, x + 380, y - 2, "#4f7bd9");
 
   drawGeneratorSmoke(x + 82, y - 14, now);
   drawGeneratorDust(x + 38, y + 202, now);
