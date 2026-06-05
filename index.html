@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tiny5&family=VT323&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20260604-proof-column-fit">
+    <link rel="stylesheet" href="styles.css?v=20260604-mobile-gamepad">
   </head>
   <body>
     <main class="app">
@@ -36,13 +36,18 @@
           <button class="icon-button" id="next-scene" type="button" aria-label="Next scene">→</button>
         </div>
 
-        <div class="touch-controls" aria-label="Touch controls">
-          <button class="touch-button" data-control="left" type="button" aria-label="Move left">←</button>
-          <button class="touch-button" data-control="right" type="button" aria-label="Move right">→</button>
-          <button class="touch-button" data-control="jump" type="button" aria-label="Jump">↑</button>
-          <button class="touch-button" data-control="slap" type="button" aria-label="Tail slap">↓</button>
-        </div>
       </section>
+
+      <div class="touch-controls" aria-label="Character controls">
+        <div class="touch-dpad" aria-label="Movement controls">
+          <button class="touch-button touch-arrow" data-control="left" type="button" aria-label="Move left">←</button>
+          <button class="touch-button touch-arrow" data-control="right" type="button" aria-label="Move right">→</button>
+        </div>
+        <div class="touch-actions" aria-label="Action controls">
+          <button class="touch-button touch-action is-jump" data-control="jump" type="button" aria-label="Jump">A</button>
+          <button class="touch-button touch-action is-slap" data-control="slap" type="button" aria-label="Tail slap">B</button>
+        </div>
+      </div>
 
       <section class="hud" aria-live="polite">
         <button class="hud-toggle" id="hud-toggle" type="button" aria-expanded="true">Career card</button>

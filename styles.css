@@ -233,22 +233,62 @@ button {
 }
 
 .touch-controls {
-  position: absolute;
-  right: 18px;
-  bottom: 74px;
   z-index: 2;
   display: none;
-  grid-template-columns: repeat(4, 42px);
-  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 10px 18px;
+  border-top: 1px solid rgba(244, 239, 229, 0.12);
+  border-bottom: 1px solid rgba(244, 239, 229, 0.12);
+  background: rgba(18, 20, 25, 0.96);
+  box-shadow: 0 -10px 22px rgba(0, 0, 0, 0.18);
+}
+
+.touch-dpad,
+.touch-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .touch-button {
   display: inline-grid;
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   place-items: center;
   font-weight: 900;
-  background: rgba(16, 17, 20, 0.72);
+  border-width: 2px;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+.touch-button:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.46);
+}
+
+.touch-arrow {
+  border-radius: 7px;
+  background: #e8e1d4;
+  color: #101114;
+  font-size: 1.05rem;
+}
+
+.touch-action {
+  width: 50px;
+  height: 50px;
+  border-radius: 999px;
+  color: #101114;
+  font-size: 0.9rem;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.28);
+}
+
+.touch-action.is-jump {
+  background: #8fd6bf;
+}
+
+.touch-action.is-slap {
+  background: #e8c872;
 }
 
 .hud {
@@ -505,7 +545,7 @@ p {
   }
 
   .touch-controls {
-    display: grid;
+    display: flex;
   }
 
   .hud-toggle {
@@ -572,15 +612,23 @@ p {
   }
 
   .touch-controls {
-    right: 12px;
-    bottom: 62px;
-    grid-template-columns: repeat(4, 38px);
-    gap: 6px;
+    padding: 10px 18px 12px;
+    gap: 12px;
   }
 
   .touch-button {
-    width: 38px;
-    height: 38px;
+    width: 42px;
+    height: 42px;
+  }
+
+  .touch-action {
+    width: 48px;
+    height: 48px;
+  }
+
+  .touch-dpad,
+  .touch-actions {
+    gap: 10px;
   }
 
   .scene-nav {
