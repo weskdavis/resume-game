@@ -2565,7 +2565,6 @@ function drawCargoFlow(x, y) {
 function drawCodeCargo(left) {
   drawCodeCargoConsole(left + 188, world.ground - 300);
   drawAiRobotBackend(left + 282, world.ground - 220);
-  text("GitHub Universe", toScreenX(left + 210), toScreenY(world.ground - 318), 16 * currentScale(), "#10151b");
 }
 
 function drawCodeCargoConsole(x, y) {
