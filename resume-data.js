@@ -22,7 +22,7 @@ window.RESUME_SCENES = [
     capability: "Builder Mindset",
     title: "Foundation",
     place: "Southern Pines / Pinehurst, NC",
-    story: "My journey begins in the Sandhills of North Carolina: practical, curious, self-directed, and industrious, I've always been oriented toward building, crafting, growing and tweaking. Why a beaver? A beaver is nature's engineer.",
+    story: "My journey began in the Sandhills of North Carolina: practical, curious, self-directed, and industrious, I've always been oriented toward building, crafting, growing and tweaking. Why a beaver? A beaver is nature's engineer.",
     proof: [
       "A natural engineer mindset: observe the terrain, find the leverage, and make things work.",
       "Self-taught and technically inclined, with systems thinking, rapid iteration, and constant improvement as driving forces.",
@@ -39,7 +39,7 @@ window.RESUME_SCENES = [
     capability: "Business, Culture, And Resilience",
     title: "Tulane University",
     place: "New Orleans, LA",
-    story: "A practical business foundation shaped by Uptown New Orleans, post-Katrina rebuilding, culture, resilience, and a get-it-done spirit. Work hard, but don't take life too serious. Life is something to celebrate.",
+    story: "A practical business foundation shaped by Uptown New Orleans, post-Katrina rebuilding, culture, resilience, and a get-it-done spirit. Work hard, play hard, celebrate life.",
     proof: [
       "Bachelor of Science in Management, A.B. Freeman School of Business; History minor.",
       "Distinguished Honors Scholarship recipient and Business & Law Society Vice President.",
@@ -56,7 +56,7 @@ window.RESUME_SCENES = [
     capability: "Contracts, IP, And Licensing",
     title: "Campbell Law",
     place: "Raleigh, NC",
-    story: "Thinking I'd go for maritime or music and entertainment law, I learned how contracts, IP, licensing, and business models turn ideas into commercial systems. I enjoyed learning the history of why everything is the way it is, but was drawn to figuring out the ins and out of conducting commerce across regimes.",
+    story: "I learned how contracts, IP, licensing, and business models turn innovation into commerce. Although I appreciated the history and legal foundations behind these systems, I found myself increasingly drawn to the practical challenge of building and scaling IP across different legal and regulatory environments.",
     proof: [
       "Juris Doctor from Campbell University, Norman Adrian Wiggins School of Law.",
       "Law Review Board of Editors, Technology Editor; IP Law Society President; Honor Court Justice.",
@@ -73,7 +73,7 @@ window.RESUME_SCENES = [
     capability: "Enterprise Open Source",
     title: "Red Hat",
     place: "Raleigh, NC",
-    story: "Self-taught from open source tools, I now learned how open source becomes enterprise software through governance, licensing, partners, product programs, services, and creative contracting.",
+    story: "Self-taught code from open source tools, I now learned how open source software becomes commercial enterprise software through governance, licensing, partners, product programs, services, and creative contracting.",
     proof: [
       "Negotiated licensing, sales, alliance, cloud, procurement, sponsorship, and development agreements exceeding $120M.",
       "Supported OpenShift GTM through new product and program legal work after beta testing the platform directly.",
@@ -157,7 +157,7 @@ window.RESUME_SCENES = [
     type: "Experience",
     capability: "Founder-Stage AI GTM",
     title: "CodeCargo",
-    place: "Pinehurst + Startup World",
+    place: "Back to Startup World",
     story: "Built GTM from zero around an AI-native developer portal: product influence, ecosystem setup, campaigns, design partners, and early deployments.",
     proof: [
       "First business hire; defined ICP, messaging, partner strategy, sales motion, and repeatable plays.",

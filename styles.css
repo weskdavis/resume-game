@@ -410,9 +410,19 @@ button {
   min-width: 104px;
 }
 
+.final-license {
+  margin: 34px 0 0;
+  color: #b7a7dc;
+  font-size: 0.68rem;
+}
+
+.final-license a:hover {
+  color: #d2c7ef;
+}
+
 .final-status {
   min-height: 18px;
-  margin: 16px 0 0;
+  margin: 8px 0 0;
   color: var(--accent);
   font-size: 0.9rem;
 }
